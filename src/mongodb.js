@@ -8,12 +8,12 @@ mongoose.connect("mongodb://127.0.0.1/LoginSystem")
     console.log("Failed to connect to MongoDB :(")
 })
 
-const SignInSchema=new mongoose.Schema({
+const SignInSchema = mongoose.Schema({
     email:{
-        type: String,
+        type: String
     },
     password:{
-        type:String,
+        type:String
     }
 })
 

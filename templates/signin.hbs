@@ -21,7 +21,7 @@
                 <i class='bx bxl-linkedin'></i>
                 <i class='bx bxl-google' ></i>
             </div>
-            <form class="form" action="/signup" method="post">
+            <form class="form" action="/signin" method="post">
                 <label for="email">Email</label>
                 <input type="email" name="email" class="email" placeholder="abc@gmail.com" required>
                 <label for="password">Password</label>
@@ -36,7 +36,7 @@
         <div class="signup">
             <h1>Hello, User!</h1>
             <p>Fill up the personal information and<br>start journey with us.</p>
-            <input type="submit" value="Sign Up" class="btn1">
+            <button class="btn1"><a href="/signup">Sign Up</button>
         </div>
     </div>
     <style>
@@ -184,6 +184,10 @@ label{
     border-radius: 40px;
     padding: 10px;
     cursor: pointer;
+}
+.main_container .signup .btn1 a{
+    text-decoration: none;
+    color: #fff;
 }
     </style>
 </body>
